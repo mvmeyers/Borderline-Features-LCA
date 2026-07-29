@@ -41,7 +41,7 @@ loaded via a namespace (and not attached):
 [57] S7_0.2.2           readxl_1.5.0
 ```
 
-Key packages for the statistical methods described in `technical_summary.md`
+Key packages for the statistical methods described in `detailed_methods.md`
 and `closed_form_bch.R`: `poLCA` 1.6.0.2 (class enumeration and posterior
 class probabilities), `glca` 1.4.2 (bootstrap likelihood-ratio test),
 `MASS` 7.3-65 (loaded first, per this project's convention, to avoid
