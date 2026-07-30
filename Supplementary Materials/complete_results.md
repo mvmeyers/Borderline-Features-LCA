@@ -3,14 +3,14 @@
 This document contains the full statistical results supporting the poster,
 matching the scope of `detailed_methods.md`: the K=5 primary model and the
 K=3/K=4 sensitivity solutions, each with concurrent validator (irritability,
-aggression, impulsivity, functioning, state mood) and NSSI self-harm
-results. Binary outcomes (sex) are reported with test statistics and
-p-values only; no effect size is calculated for them here.
+aggression, impulsivity, functioning, state mood) and NSSI results.
+Binary outcomes (sex) are reported with test statistics and p-values only.
 
-**Sample:** N = 439 in the PGBI-elevated subsample; N = 435 complete-case
-on the 8 SCID-II identity items (the analytic sample for every class model
-below). The NSSI self-harm analysis uses a smaller, concurrently-matched
-subsample (N = 310); see §2.6/§3.6/§4.6.
+**Sample:** N = 439 in the P-GBI-elevated subsample; N = 435 complete-case
+on 8 SCID-II identity/interpersonal items (the analytic sample for every
+class model below). The NSSI self-harm analysis uses a smaller,
+concurrently-matched subsample (N = 310) that corresponded to availability of
+responses to the Youth Risk Behavior Survey (High School form).
 
 ---
 
