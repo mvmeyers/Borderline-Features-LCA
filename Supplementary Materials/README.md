@@ -1,10 +1,9 @@
 # OSF Supplement
 
-Supplementary materials for the poster on personality-functioning classes
-(latent class analysis of 8 BPD identity-disturbance items) in a
-mania-risk youth sample, and their relationship to irritability,
-aggression, impulsivity, psychosocial functioning, state mood, and
-non-suicidal self-injury (NSSI).
+## Latent Classes of Borderline Personality Features Differentiate Self-Harm in Youth with Elevated Symptoms of Mania
+Supplementary materials for AWRI Summer Student Poster Day 2026
+Poster presented by Margaret Meyers
+Contact at veselin@unc.edu or mmeyers8549@gmail.com
 
 ## Files
 
@@ -42,13 +41,6 @@ non-suicidal self-injury (NSSI).
 
 - **`session_info.md`** — R and package versions used to produce these
   results, for reproducibility.
-
-## Scope note
-
-All documents describe the same, consistent scope: the K=5 primary
-model with K=3/K=4 as disclosed sensitivity checks, concurrent validators
-(irritability, aggression, impulsivity, two A-LIFE psychosocial-functioning
-items, state mood), and NSSI as the self-harm outcome.
 
 ## Suggested reading order
 
