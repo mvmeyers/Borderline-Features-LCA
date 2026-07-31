@@ -1,4 +1,4 @@
-# OSF Supplement
+# OSF/GitHub Supplement
 
 ## Latent Classes of Borderline Personality Features Differentiate Self-Harm in Youth with Elevated Symptoms of Mania
 
