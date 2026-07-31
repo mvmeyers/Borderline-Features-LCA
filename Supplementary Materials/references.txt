@@ -1,0 +1,11 @@
+1 Moselli, M., Casini, M. P., Frattini, C., & Williams, R. (2023). Suicidality and Personality Pathology in Adolescence: A Systematic Review. Child Psychiatry & Human Development, 54(2), 290–311. https://doi.org/10.1007/s10578-021-01239-x
+
+2 Garno, J. L., Goldberg, J. F., Ramirez, P. M., & Ritzler, B. A. (2005). Bipolar Disorder With Comorbid Cluster B Personality Disorder Features: Impact on Suicidality. The Journal of Clinical Psychiatry, 66(3), 339–345. https://doi.org/10.4088/JCP.v66n0310
+
+3 Linzer, D. A., & Lewis, J. B. (2011). poLCA: An R Package for Polytomous Variable Latent Class Analysis. Journal of Statistical Software, 42, 1–29. https://doi.org/10.18637/jss.v042.i10
+
+4 Bolck, A., Croon, M., & Hagenaars, J. (2004). Estimating Latent Structure Models with Categorical Variables: One-Step Versus Three-Step Estimators. Political Analysis, 12(1), 3–27. https://doi.org/10.1093/pan/mph001
+
+5 Nylund-Gibson, K., Grimm, R. P., & Masyn, K. E. (2019). Prediction from Latent Classes: A Demonstration of Different Approaches to Include Distal Outcomes in Mixture Models. Structural Equation Modeling: A Multidisciplinary Journal, 26(6), 967–985. https://doi.org/10.1080/10705511.2019.1590146
+
+6 Paris, J., Gunderson, J., & Weinberg, I. (2007). The interface between borderline personality disorder and bipolar spectrum disorders. Comprehensive Psychiatry, 48(2), 145–154. https://doi.org/10.1016/j.comppsych.2006.10.001
