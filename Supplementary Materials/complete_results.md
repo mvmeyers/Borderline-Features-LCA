@@ -1,15 +1,15 @@
 `Complete Results`
 
 This document contains the full statistical results supporting the poster,
-matching the scope of `detailed_methods.md`: the K=5 primary model and the
-K=3/K=4 sensitivity solutions, each with concurrent validator (irritability,
+matching the scope of `detailed_methods.md`: the *K*=5 primary model and the
+*K*=3/*K*=4 sensitivity solutions, each with concurrent validator (irritability,
 aggression, impulsivity, functioning, state mood) and NSSI results.
-Binary outcomes (sex) are reported with test statistics and p-values only.
+Binary outcomes (sex) are reported with test statistics and *p*-values only.
 
-**Sample:** N = 439 in the P-GBI-elevated subsample; N = 435 complete-case
+**Sample:** *N* = 439 in the PGBI-elevated subsample; *N* = 435 complete-case
 on 8 SCID-II identity/interpersonal items (the analytic sample for every
 class model below). The NSSI self-harm analysis uses a smaller,
-concurrently-matched subsample (N = 310) that corresponded to availability of
+concurrently-matched subsample (*N* = 310) that corresponded to availability of
 responses to the Youth Risk Behavior Survey (High School form).
 
 ---
@@ -18,7 +18,7 @@ responses to the Youth Risk Behavior Survey (High School form).
 
 `poLCA`, `nrep = 200`, `maxiter = 5000`, `tol = 1e-8`.
 
-| K | logLik | npar | AIC | BIC | aBIC | CAIC | Entropy | Smallest class (model-implied) |
+| *K* | logLik | npar | AIC | BIC | aBIC | CAIC | Entropy | Smallest class (model-implied) |
 |---|--------|------|-----|-----|------|------|---------|----------|
 | 1 | -1800.131 | 8 | 3616.262 | 3648.865 | 3623.477 | 3656.865 | — | 100.0% |
 | 2 | -1480.726 | 17 | 2995.451 | 3064.732 | 3010.783 | 3081.732 | 0.881 | 25.0% |
@@ -27,35 +27,35 @@ responses to the Youth Risk Behavior Survey (High School form).
 | **5** | **-1420.617** | **44** | **2929.235** | 3108.550 | **2968.917** | 3152.550 | 0.790 | 8.1% |
 | 6 | -1414.349 | 53 | 2934.697 | 3150.690 | 2982.497 | 3203.690 | 0.823 | 1.0% |
 
-BIC and CAIC are minimized at K = 2; AIC and sample-size-adjusted BIC
-(aBIC) are minimized at K = 5. K = 5 was selected as the primary model on
+BIC and CAIC are minimized at *K* = 2; AIC and sample-size-adjusted BIC
+(aBIC) are minimized at *K* = 5. *K* = 5 was selected as the primary model on
 a priori direction for this exploratory poster (a choice that also happens
-to align with aBIC); K = 3 and K = 4 are reported as disclosed sensitivity
+to align with aBIC); *K* = 3 and *K* = 4 are reported as disclosed sensitivity
 solutions.
 
 ### Bootstrap likelihood-ratio test (BLRT)
 
 Run in `glca`, since `poLCA` provides neither BLRT nor LMR. The nested
 comparison (below) is the test that answers "does adding a class improve
-fit"; it is distinct from each model's own absolute-fit p-value against
+fit"; it is distinct from each model's own absolute-fit *p*-value against
 the saturated model.
 
 **Nested comparison (k classes vs. k−1 classes):**
 
-| Comparison | df | Deviance | Boot p | Sig |
+| Comparison | df | Deviance | Boot *p* | Sig |
 |---|---|---|---|---|
-| K=3 vs K=2 | 9 | 51.03 | <.001 | *** |
-| K=4 vs K=3 | 9 | 36.62 | <.001 | *** |
-| K=5 vs K=4 | 9 | 32.57 | <.001 | *** |
-| K=6 vs K=5 | 9 | 10.38 | .36 | ns |
+| *K*=3 vs *K*=2 | 9 | 51.03 | <.001 | *** |
+| *K*=4 vs *K*=3 | 9 | 36.62 | <.001 | *** |
+| *K*=5 vs *K*=4 | 9 | 32.57 | <.001 | *** |
+| *K*=6 vs *K*=5 | 9 | 10.38 | .36 | ns |
 
 The nested test is significant through the 5-vs-4 comparison and stops
-being significant at 6-vs-5, consistent with support for K = 5 (and no
-further improvement at K = 6).
+being significant at 6-vs-5, consistent with support for *K* = 5 (and no
+further improvement at *K* = 6).
 
 **Each model's own absolute fit (Gsq vs. the saturated model):**
 
-| K | Absolute-fit boot p |
+| *K* | Absolute-fit boot *p* |
 |---|---|
 | 2 | <.001 |
 | 3 | <.001 |
@@ -63,12 +63,12 @@ further improvement at K = 6).
 | 5 | .58 |
 | 6 | .59 |
 
-K = 4 is the first model that fits adequately in an absolute sense (p =
-.20); K = 5 fits comfortably (p = .58).
+*K* = 4 is the first model that fits adequately in an absolute sense (*p* =
+.20); *K* = 5 fits comfortably (*p* = .58).
 
 ---
 
-## 2. K = 5 — Primary model
+## 2. *K* = 5 — Primary model
 
 ### 2.1 Item-endorsement profile — P(endorse | class)
 
@@ -87,9 +87,9 @@ Class 1 = Minimal Features, Class 2 = Interpersonal Reactivity, Class 3 =
 Identity-Goal Instability, Class 4 = Relational Stress-Reactivity, Class 5
 = Pervasive Identity-Interpersonal Disturbance.
 
-### 2.2 Class sizes (modal assignment, N = 435)
+### 2.2 Class sizes (modal assignment, *N* = 435)
 
-| Class | n | % |
+| Class | *n* | % |
 |-------|---|---|
 | Class 1 | 239 | 54.9% |
 | Class 2 | 67 | 15.4% |
@@ -97,15 +97,11 @@ Identity-Goal Instability, Class 4 = Relational Stress-Reactivity, Class 5
 | Class 4 | 45 | 10.3% |
 | Class 5 | 64 | 14.7% |
 
-Class 3 (n = 20, 4.6%) falls below the project's own <5%-class exclusion
-convention; retained because of a clinically notable self-harm signal
-(§2.6).
-
 ### 2.3 Validator comparisons — omnibus (Wald) tests
 
 BCH-weighted, FDR-corrected (Benjamini-Hochberg) within this panel.
 
-| Validator | BCH Wald χ² | df | Omnibus p | ω² | FDR p | Sig |
+| Validator | BCH Wald χ² | df | Omnibus *p* | ω² | FDR *p* | Sig |
 |---|---|---|---|---|---|---|
 | Aggression (CASI Category C) | 16.00 | 4 | 3.02e-3 | 0.029 | 5.03e-3 | ** |
 | Impulsivity (CASI Category A) | 18.88 | 4 | 8.30e-4 | 0.035 | 2.16e-3 | ** |
@@ -125,7 +121,7 @@ scored higher.
 
 **Aggression (CASI Category C)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.530 | 0.164 | -3.22 | .013 | * |
 | Class1 vs Class3 | 0.072 | 0.185 | 0.39 | .773 | ns |
@@ -140,7 +136,7 @@ scored higher.
 
 **Impulsivity (CASI Category A)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.615 | 0.167 | -3.68 | .0023 | ** |
 | Class1 vs Class3 | -0.031 | 0.234 | -0.13 | .893 | ns |
@@ -155,7 +151,7 @@ scored higher.
 
 **Irritability (IDA)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -2.636 | 0.524 | -5.03 | 4.9e-6 | *** |
 | Class1 vs Class3 | -0.272 | 0.777 | -0.35 | .727 | ns |
@@ -171,7 +167,7 @@ scored higher.
 **State mania (YMRS)** — omnibus ns; no pairwise contrasts reach FDR
 significance.
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -3.173 | 1.725 | -1.84 | .219 | ns |
 | Class1 vs Class3 | 1.022 | 2.172 | 0.47 | .911 | ns |
@@ -186,7 +182,7 @@ significance.
 
 **State depression (CDRS-R)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -5.177 | 2.177 | -2.38 | .087 | ns (trend) |
 | Class1 vs Class3 | -2.663 | 2.283 | -1.17 | .487 | ns |
@@ -201,7 +197,7 @@ significance.
 
 **A-LIFE interpersonal (aps205)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.465 | 0.238 | -1.95 | .127 | ns |
 | Class1 vs Class3 | -0.028 | 0.180 | -0.16 | .877 | ns |
@@ -216,7 +212,7 @@ significance.
 
 **A-LIFE global (apr209)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.405 | 0.253 | -1.60 | .219 | ns |
 | Class1 vs Class3 | -0.044 | 0.180 | -0.25 | .884 | ns |
@@ -239,27 +235,27 @@ significance.
 | Class 4 | 48.9% | 51.1% |
 | Class 5 | 50.0% | 50.0% |
 
-χ²(4) = 36.43, p = 2.36e-7.
+χ²(4) = 36.43, *p* = 2.36e-7.
 
 ### 2.6 NSSI (self-harm)
 
-Concurrent self-harm analysis, N = 310. Winsorized sum capped at the 95th
+Concurrent self-harm analysis, *N* = 310. Winsorized sum capped at the 95th
 percentile (= 8 in this sample).
 
 **Omnibus:**
 
-| Outcome | BCH Wald χ² | df | p | Effect size | Sig |
+| Outcome | BCH Wald χ² | df | *p* | Effect size | Sig |
 |---|---|---|---|---|---|
 | `nssi_sum_wins` (continuous) | 47.84 | 4 | 1.02e-9 | ω² = 0.168 | *** |
 
 `in_range = TRUE`, `min_bch_weight = -0.72`. No FDR correction shown:
 `nssi_sum_wins` is the only outcome in this panel, on its own sample
-(N = 310, distinct from the main panel's N = 435), so there's no sibling
+(*N* = 310, distinct from the main panel's *N* = 435), so there's no sibling
 test in scope to correct against.
 
 **Pairwise, `nssi_sum_wins`:**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -1.478 | 0.506 | -2.92 | .012 | * |
 | Class1 vs Class3 | -1.750 | 0.750 | -2.33 | .049 | * |
@@ -273,13 +269,11 @@ test in scope to correct against.
 | Class4 vs Class5 | -0.334 | 1.031 | -0.32 | .749 | ns |
 
 **Reading:** Class 1 (Minimal) is significantly lower on NSSI than all
-four other classes. No other pair reaches significance. N = 191
-respondents were excluded from this analysis (no class match / no valid
-last-completed-SCID wave).
+four other classes. No other pair reaches significance.
 
 ---
 
-## 3. K = 3 — Sensitivity solution
+## 3. *K* = 3 — Sensitivity solution
 
 ### 3.1 Item-endorsement profile
 
@@ -297,9 +291,9 @@ last-completed-SCID wave).
 Class 1 = Minimal, Class 2 = Interpersonal / Abandonment, Class 3 =
 Pervasive identity disturbance.
 
-### 3.2 Class sizes (modal assignment, N = 435)
+### 3.2 Class sizes (modal assignment, *N* = 435)
 
-| Class | n | % |
+| Class | *n* | % |
 |---|---|---|
 | Class 1 | 286 | 65.7% |
 | Class 2 | 73 | 16.8% |
@@ -307,7 +301,7 @@ Pervasive identity disturbance.
 
 ### 3.3 Validator comparisons — omnibus (Wald) tests
 
-| Validator | BCH Wald χ² | df | Omnibus p | ω² | FDR p | Sig |
+| Validator | BCH Wald χ² | df | Omnibus *p* | ω² | FDR *p* | Sig |
 |---|---|---|---|---|---|---|
 | Aggression | 14.73 | 2 | 6.33e-4 | 0.032 | 1.58e-3 | ** |
 | Impulsivity | 9.82 | 2 | 7.38e-3 | 0.019 | .0148 | * |
@@ -323,7 +317,7 @@ Pervasive identity disturbance.
 
 **Aggression (CASI Category C)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.522 | 0.141 | -3.70 | 6.4e-4 | *** |
 | Class1 vs Class3 | -0.155 | 0.109 | -1.43 | .153 | ns |
@@ -331,7 +325,7 @@ Pervasive identity disturbance.
 
 **Impulsivity (CASI Category A)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.367 | 0.145 | -2.53 | .034 | * |
 | Class1 vs Class3 | -0.238 | 0.111 | -2.14 | .048 | * |
@@ -339,7 +333,7 @@ Pervasive identity disturbance.
 
 **Irritability (IDA)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -1.586 | 0.466 | -3.40 | 9.9e-4 | *** |
 | Class1 vs Class3 | -1.411 | 0.395 | -3.57 | 9.9e-4 | *** |
@@ -348,7 +342,7 @@ Pervasive identity disturbance.
 **State mania (YMRS)** — omnibus ns; no pairwise contrasts reach FDR
 significance.
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.606 | 1.504 | -0.40 | .687 | ns |
 | Class1 vs Class3 | -2.271 | 1.357 | -1.67 | .283 | ns |
@@ -356,7 +350,7 @@ significance.
 
 **State depression (CDRS-R)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -1.228 | 1.769 | -0.69 | .488 | ns |
 | Class1 vs Class3 | -4.373 | 1.477 | -2.96 | .0092 | ** |
@@ -364,7 +358,7 @@ significance.
 
 **A-LIFE interpersonal (aps205)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.551 | 0.183 | -3.02 | .0038 | ** |
 | Class1 vs Class3 | -0.505 | 0.137 | -3.68 | 6.9e-4 | *** |
@@ -372,7 +366,7 @@ significance.
 
 **A-LIFE global (apr209)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -0.433 | 0.171 | -2.53 | .017 | * |
 | Class1 vs Class3 | -0.494 | 0.143 | -3.46 | .0016 | ** |
@@ -386,13 +380,13 @@ significance.
 | Class 2 | 54.8% | 45.2% |
 | Class 3 | 51.3% | 48.7% |
 
-χ²(2) = 22.15, p = 1.55e-5.
+χ²(2) = 22.15, *p* = 1.55e-5.
 
 ### 3.6 NSSI (self-harm)
 
 **Omnibus:**
 
-| Outcome | BCH Wald χ² | df | p | Effect size | Sig |
+| Outcome | BCH Wald χ² | df | *p* | Effect size | Sig |
 |---|---|---|---|---|---|
 | `nssi_sum_wins` | 49.28 | 2 | 1.99e-11 | ω² = 0.190 | *** |
 
@@ -401,7 +395,7 @@ significance.
 
 **Full pairwise:**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -2.050 | 0.563 | -3.64 | 4.0e-4 | *** |
 | Class1 vs Class3 | -3.107 | 0.525 | -5.91 | 1.0e-8 | *** |
@@ -412,7 +406,7 @@ Class 2 and Class 3; Class 2 vs Class 3 is not significant.
 
 ---
 
-## 4. K = 4 — Sensitivity solution
+## 4. *K* = 4 — Sensitivity solution
 
 ### 4.1 Item-endorsement profile
 
@@ -427,9 +421,9 @@ Class 2 and Class 3; Class 2 vs Class 3 is not significant.
 | sc07 | 0.016 | 0.183 | 0.280 | 0.763 |
 | sc08 | 0.032 | 0.240 | 0.354 | 0.845 |
 
-### 4.2 Class sizes (modal assignment, N = 435)
+### 4.2 Class sizes (modal assignment, *N* = 435)
 
-| Class | n | % |
+| Class | *n* | % |
 |---|---|---|
 | Class 1 | 262 | 60.2% |
 | Class 2 | 28 | 6.4% |
@@ -438,7 +432,7 @@ Class 2 and Class 3; Class 2 vs Class 3 is not significant.
 
 ### 4.3 Validator comparisons — omnibus (Wald) tests
 
-| Validator | BCH Wald χ² | df | Omnibus p | ω² | FDR p | Sig |
+| Validator | BCH Wald χ² | df | Omnibus *p* | ω² | FDR *p* | Sig |
 |---|---|---|---|---|---|---|
 | Aggression | 21.01 | 3 | 1.05e-4 | 0.040 | 3.49e-4 | *** |
 | Impulsivity | 16.22 | 3 | 1.02e-3 | 0.032 | 2.04e-3 | ** |
@@ -454,7 +448,7 @@ Class 2 and Class 3; Class 2 vs Class 3 is not significant.
 
 **Aggression (CASI Category C)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | 0.277 | 0.176 | 1.57 | .139 | ns |
 | Class1 vs Class3 | -0.472 | 0.133 | -3.56 | 1.1e-3 | ** |
@@ -465,7 +459,7 @@ Class 2 and Class 3; Class 2 vs Class 3 is not significant.
 
 **Impulsivity (CASI Category A)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | 0.118 | 0.220 | 0.54 | .593 | ns |
 | Class1 vs Class3 | -0.436 | 0.137 | -3.17 | .0091 | ** |
@@ -476,7 +470,7 @@ Class 2 and Class 3; Class 2 vs Class 3 is not significant.
 
 **Irritability (IDA)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | 0.186 | 0.744 | 0.25 | .802 | ns |
 | Class1 vs Class3 | -1.564 | 0.435 | -3.60 | 9.7e-4 | *** |
@@ -488,7 +482,7 @@ Class 2 and Class 3; Class 2 vs Class 3 is not significant.
 **State mania (YMRS)** — omnibus ns; no pairwise contrasts reach FDR
 significance.
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | 0.291 | 2.304 | 0.13 | .900 | ns |
 | Class1 vs Class3 | -0.562 | 1.397 | -0.40 | .884 | ns |
@@ -499,7 +493,7 @@ significance.
 
 **State depression (CDRS-R)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -2.651 | 2.573 | -1.03 | .401 | ns |
 | Class1 vs Class3 | -2.214 | 1.732 | -1.28 | .401 | ns |
@@ -510,7 +504,7 @@ significance.
 
 **A-LIFE interpersonal (aps205)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | 0.102 | 0.192 | 0.53 | .714 | ns |
 | Class1 vs Class3 | -0.556 | 0.181 | -3.08 | .0042 | ** |
@@ -521,7 +515,7 @@ significance.
 
 **A-LIFE global (apr209)**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | 0.095 | 0.219 | 0.43 | .694 | ns |
 | Class1 vs Class3 | -0.473 | 0.170 | -2.78 | .016 | * |
@@ -539,13 +533,13 @@ significance.
 | Class 3 | 54.9% | 45.1% |
 | Class 4 | 49.2% | 50.8% |
 
-χ²(3) = 25.06, p = 1.50e-5.
+χ²(3) = 25.06, *p* = 1.50e-5.
 
 ### 4.6 NSSI (self-harm)
 
 **Omnibus:**
 
-| Outcome | BCH Wald χ² | df | p | Effect size | Sig |
+| Outcome | BCH Wald χ² | df | *p* | Effect size | Sig |
 |---|---|---|---|---|---|
 | `nssi_sum_wins` | 48.22 | 3 | 1.91e-10 | ω² = 0.169 | *** |
 
@@ -554,7 +548,7 @@ significance.
 
 **Full pairwise:**
 
-| Contrast | est | SE | z | p_fdr | Sig |
+| Contrast | est | SE | *z* | p_fdr | Sig |
 |---|---|---|---|---|---|
 | Class1 vs Class2 | -1.664 | 0.697 | -2.39 | .034 | * |
 | Class1 vs Class3 | -2.206 | 0.534 | -4.13 | 1.1e-4 | *** |
@@ -570,7 +564,7 @@ three other classes. No other pair reaches significance.
 
 ## 5. Cross-model summary
 
-| | K=3 | K=4 | **K=5 (primary)** |
+| | *K*=3 | *K*=4 | **_K_=5 (primary)** |
 |---|---|---|---|
 | Smallest modal class | 16.8% | 6.4% | **4.6%** |
 | Concurrent validators significant (of 7) | 6 | 5 | 5 |
@@ -579,4 +573,4 @@ three other classes. No other pair reaches significance.
 
 The validator story (irritability, aggression, impulsivity, mood,
 functioning differentiate classes) and the NSSI differentiation both
-replicate across all three K.
+replicate across all three *K*.

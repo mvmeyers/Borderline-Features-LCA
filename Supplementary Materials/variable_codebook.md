@@ -5,21 +5,21 @@ A lookup table for the short variable names used throughout
 decoded without cross-referencing `detailed_methods.md`. See that
 document for the full scoring/proration rules behind each measure.
 
-## LCA indicators (SCID-II identity-disturbance items)
+## LCA indicators (SCID-II BPD items pertaining to identity disturbance and unstable relationships)
 
 The 8 items that define the latent classes themselves — never treated as
 an outcome.
 
-| Variable | Construct |
-|---|---|
-| `sc01` | Abandonment fears |
-| `sc02` | Unstable relationships |
-| `sc03` | Sudden identity shifts |
-| `sc04` | Identity instability |
-| `sc05` | Unstable self-image |
-| `sc06` | Goal instability |
-| `sc07` | Chronic emptiness |
-| `sc08` | Stress-related dissociation / paranoia |
+| Variable | Question | Construct |
+|---|---|---|
+| `sc01` | Have you often become frantic when you have thoughts that someone you really cared about was going to leave you? | Abandonment fears |
+| `sc02` | Do your relationships with people you really care about have lots of extreme ups and downs? | Unstable relationships |
+| `sc03` | Have you all of the sudden changed your sense of who you are and where you are headed? | Sudden identity shifts |
+| `sc04` | Does your sense of who you are often change dramatically? | Identity instability |
+| `sc05` | Are you different with different people or in different situations so that you sometimes don't know who you really are? | Unstable self-image |
+| `sc06` | Have there been lots of sudden changes in your goals, career plans, religious beliefs, and so on? | Goal instability |
+| `sc07` | Do you often feel empty inside? | Chronic emptiness |
+| `sc08` | When you are under a lot of stress do you get suspicious of other people or feel especially spaced out? | Stress-related dissociation / paranoia |
 
 ## Concurrent validators
 
@@ -29,7 +29,7 @@ an outcome.
 | `capa_imp` | Impulsivity (CASI Category A) | 0–3 | Higher = more impulsivity |
 | `ida_irr` | Irritability (IDA) | 0–12 | Higher = more irritability |
 | `ymrs` | State mania (YMRS) | 0–60 | Higher = more manic |
-| `cdrs` | State depression (CDRS-R) | 17–113 | Higher = more depressed |
+| `cdrs` | State depression (CDRS-R) | 17–113 | Higher = more indication of depression |
 | `aps205` | A-LIFE: interpersonal functioning | 1–5 | Higher = poorer functioning |
 | `apr209` | A-LIFE: global social adjustment | 1–5 | Higher = poorer functioning |
 | `sex` | Sex | 1 / 2 | 1 = male, 2 = female |
@@ -42,8 +42,8 @@ an outcome.
 
 ## Class labels
 
-`Class 1`–`Class 5` (K=5 primary model), `Class 1`–`Class 4` (K=4
-sensitivity), `Class 1`–`Class 3` (K=3 sensitivity). Numbering is
+`Class 1`–`Class 5` (*K*=5 primary model), `Class 1`–`Class 4` (*K*=4
+sensitivity), `Class 1`–`Class 3` (*K*=3 sensitivity). Numbering is
 arbitrary (an artifact of model-fitting order), **not** an ordered
 severity ranking — see `detailed_methods.md`'s typology-vs-continuum
 discussion for why classes shouldn't be read as low-to-high.
@@ -54,16 +54,16 @@ discussion for why classes shouldn't be read as low-to-high.
 |---|---|
 | `K` | Number of latent classes in a given model |
 | `logLik` | Log-likelihood of the fitted model |
-| `AIC` / `BIC` / `aBIC` / `CAIC` | Model fit indices used to compare different K (lower = better fit, with tradeoffs — see `detailed_methods.md`) |
+| `AIC` / `BIC` / `aBIC` / `CAIC` | Model fit indices used to compare different *K* (lower = better fit, with tradeoffs — see `detailed_methods.md`) |
 | Entropy | How cleanly the model separates people into classes (0–1, higher = better separated) |
-| Boot p | Bootstrap likelihood-ratio test p-value (is adding a class an improvement?) |
-| BCH Wald χ² / df | The omnibus test statistic and its degrees of freedom (K − 1 classes); `pchisq()` on these two converts to the omnibus p-value |
-| Omnibus p / `omnibus_p` | Raw p-value testing whether an outcome differs across all classes at once |
-| FDR p / `p_fdr` | The omnibus or pairwise p-value after Benjamini-Hochberg correction for multiple comparisons |
+| Boot *p* | Bootstrap likelihood-ratio test *p*-value (is adding a class an improvement?) |
+| BCH Wald χ² / df | The omnibus test statistic and its degrees of freedom (*K* − 1 classes); `pchisq()` on these two converts to the omnibus *p*-value |
+| Omnibus *p* / `omnibus_p` | Raw *p*-value testing whether an outcome differs across all classes at once |
+| FDR *p* / `p_fdr` | The omnibus or pairwise *p*-value after Benjamini-Hochberg correction for multiple comparisons |
 | ω² (omega squared) | Effect size for a continuous outcome (how much of its variance the classes account for) |
 | `est` | BCH-corrected difference between two classes' means (a pairwise contrast) |
 | SE | Standard error |
 | `z` | Test statistic for a pairwise contrast |
-| Sig | Significance stars: `***` p<.001, `**` p<.01, `*` p<.05, `ns` not significant, `ns (trend)` p<.10 |
+| Sig | Significance stars: `***` *p*<.001, `**` *p*<.01, `*` *p*<.05, `ns` not significant, `ns (trend)` *p*<.10 |
 | `min_bch_weight` | Diagnostic: the most negative BCH weight in the sample |
 | `in_range` | Diagnostic: whether every class's BCH-corrected value fell within the outcome's actually-observed range |

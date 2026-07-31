@@ -42,11 +42,14 @@ loaded via a namespace (and not attached):
 ```
 
 Key packages for the statistical methods described in `detailed_methods.md`
-and `closed_form_bch.R`: `poLCA` 1.6.0.2 (class enumeration and posterior
-class probabilities), `glca` 1.4.2 (bootstrap likelihood-ratio test),
-`MASS` 7.3-65 (loaded first, per this project's convention, to avoid
-`MASS::select()` silently masking `dplyr::select()`), `dplyr` 1.2.1 /
-`tidyr` 1.3.2 / `purrr` 1.2.2 (data pipelines), `ggplot2` 4.0.3 /
-`scales` 1.4.0 (figures), and `multcompView` 0.1-11 (compact-letter
-displays for pairwise contrasts). The closed-form BCH estimator itself
-(`bch_weights()`, `class_distal_report()`) uses base R only.
+and `closed_form_bch.R`:
+- `poLCA` 1.6.0.2 (class enumeration and posterior class probabilities)
+- `glca` 1.4.2 (bootstrap likelihood-ratio test)
+- `MASS` 7.3-65 (loaded first, per this project's convention, to avoid
+  `MASS::select()` silently masking `dplyr::select()`)
+- `dplyr` 1.2.1 / `tidyr` 1.3.2 / `purrr` 1.2.2 (data pipelines)
+- `ggplot2` 4.0.3 / `scales` 1.4.0 (figures)
+- `multcompView` 0.1-11 (compact-letter displays for pairwise contrasts)
+
+The closed-form BCH estimator itself (`bch_weights()`,
+`class_distal_report()`) uses base R only.

@@ -3,10 +3,10 @@
 Visual companion to the omnibus and pairwise tables in `complete_results.md`
 — the same seven concurrent validators (aggression, impulsivity,
 irritability, state mania, state depression, and the two A-LIFE
-psychosocial-functioning items), for each of the K=5 primary and K=3/K=4
-sensitivity solutions.
+psychosocial-functioning items), for each of the *K*=5 primary and *K*=3/*K*=4
+sensitivity solutions. Images are also found in the figures folder.
 
-For each K, two figures:
+For each *K*, two figures:
 - **Item-endorsement profile** — the 8 SCID-II items' endorsement
   probability by class, the basis for each class's interpretation and for
   the typology-vs-continuum check described in `detailed_methods.md`.
@@ -19,7 +19,7 @@ For each K, two figures:
 
 ---
 
-## K = 5 (primary)
+## *K* = 5 (primary)
 
 ![Item-endorsement profile, K=5](figures/item_probs_k5.png)
 
@@ -27,7 +27,7 @@ For each K, two figures:
 
 ---
 
-## K = 3 (sensitivity)
+## *K* = 3 (sensitivity)
 
 ![Item-endorsement profile, K=3](figures/item_probs_k3.png)
 
@@ -35,7 +35,7 @@ For each K, two figures:
 
 ---
 
-## K = 4 (sensitivity)
+## *K* = 4 (sensitivity)
 
 ![Item-endorsement profile, K=4](figures/item_probs_k4.png)
 
